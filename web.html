@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Forgotten VR Game (AKA Monke Madness)</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 3rem 1rem;
+      background-color: #222;
+      text-align: center;
+      border-bottom: 5px solid #ff4500;
+      box-shadow: 0 0 20px #ff4500;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #ff4500;
+      text-shadow: 0 0 15px #ff4500;
+      margin-bottom: 0.2rem;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #ff9966;
+      margin-bottom: 1.5rem;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .btn-warning {
+      font-weight: 900;
+      font-size: 1.3rem;
+      box-shadow: 0 0 10px #ffcc00;
+      transition: transform 0.2s ease;
+    }
+    .btn-warning:hover {
+      transform: scale(1.1) rotate(-10deg);
+      box-shadow: 0 0 20px #ffcc00;
+    }
+    .feature-icon {
+      font-size: 4rem;
+      color: #ff4500;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #ff4500;
+    }
+    .feature-card {
+      background: #222;
+      border: 3px dashed #ff4500;
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+    .feature-card:hover {
+      background: #ff45001a;
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 2px solid #ff4500;
+      margin-top: 3rem;
+    }
+    a.btn-danger {
+      background-color: #ff4500;
+      border: none;
+      box-shadow: 0 0 15px #ff4500;
+      font-weight: 900;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    a.btn-danger:hover {
+      background-color: #e03e00;
+      box-shadow: 0 0 25px #e03e00;
+      transform: rotate(-5deg) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Forgotten VR Game</h1>
+    <p>(Because regular gorillas needed more drama)</p>
+    <button class="btn btn-warning btn-lg" onclick="alert('You clicked it! Prepare for epic monkey business 🐒')">Smash This Button</button>
+  </header>
+
+  <main>
+    <section class="text-center mb-5">
+      <h2>Why Play The Forgotten? (Besides the Monke Juice)</h2>
+      <p>
+        Because swinging around like a virtual ape beats sitting at your desk staring at spreadsheets.<br/>
+        Plus, it’s free monkey therapy. No bananas required.
+      </p>
+    </section>
+
+    <section id="features" class="mb-5">
+      <h3 class="text-center mb-4">Features That Don’t Suck</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="fa-solid fa-brain feature-icon"></i>
+            <h5>Brain-Melting VR Controls</h5>
+            <p>Move like a gorilla, think like a savage. No hand cramps guaranteed (maybe).</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="fa-solid fa-jungle feature-icon"></i>
+            <h5>Wild New Maps</h5>
+            <p>Lost temples, spooky caves, and places your mom warned you about.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center">
+            <i class="fa-solid fa-people-group feature-icon"></i>
+            <h5>Multiplayer Madness</h5>
+            <p>Squad up with your monkey pals or troll the noobs online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="text-center mb-5">
+      <h3>Ready to Join the Monkey Mafia?</h3>
+      <p>Click the big red button below. No refunds if you get addicted.</p>
+      <a href="#" class="btn btn-danger btn-lg">Download The Forgotten VR</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Forgotten VR Game — Officially Unofficial Monke Madness</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
