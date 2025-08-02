@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Forgotten VR Game</title>
+  <meta name="description" content="The Forgotten VR Game — a chaotic, free fan-made VR game inspired by Gorilla Tag. No bananas required.">
+  <meta name="keywords" content="VR, Gorilla Tag, Monkey Game, Free VR Game, The Forgotten, funny VR game">
+  <meta name="author" content="Coconutz Studios">
+  <meta property="og:title" content="The Forgotten VR Game">
+  <meta property="og:description" content="A chaotic, free fan-made VR experience inspired by Gorilla Tag. Multiplayer madness, spicy maps, and monkey drama.">
+  <meta property="og:image" content="https://yourdomain.com/preview.png"><!-- Replace with actual image -->
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="som  " type="image/x-icon">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar {
+      background-color: #222;
+      border-bottom: 4px solid #ff4500;
+      box-shadow: 0 0 15px #ff4500;
+    }
+    .navbar-brand {
+      font-weight: 900;
+      color: #ff4500 !important;
+      font-size: 1.75rem;
+      text-shadow: 0 0 10px #ff4500;
+      user-select: none;
+    }
+    .nav-link {
+      color: #ff9966 !important;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #ff4500 !important;
+      text-shadow: 0 0 8px #ff4500;
+    }
+    header {
+      padding: 3rem 1rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.75rem;
+      color: #ff4500;
+      text-shadow: 0 0 20px #ff4500;
+      margin-bottom: 0.2rem;
+    }
+    header p {
+      font-size: 1.5rem;
+      color: #ff9966;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .btn-warning, .btn-danger {
+      font-weight: 900;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      box-shadow: 0 0 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-warning {
+      font-size: 1.3rem;
+      color: #443800;
+      background-color: #ffcc00;
+      box-shadow: 0 0 15px #ffcc00;
+      border: none;
+    }
+    .btn-warning:hover {
+      background-color: #e6b800;
+      box-shadow: 0 0 30px #e6b800;
+      transform: scale(1.1) rotate(-10deg);
+      color: #2f2400;
+    }
+    .btn-danger {
+      font-size: 1.4rem;
+      background-color: #ff4500;
+      box-shadow: 0 0 15px #ff4500;
+      border: none;
+      color: #fff;
+    }
+    .btn-danger:hover {
+      background-color: #e03e00;
+      box-shadow: 0 0 25px #e03e00;
+      transform: rotate(-5deg) scale(1.05);
+      color: #fff;
+      text-decoration: none;
+    }
+    .feature-card {
+      background: #222;
+      border: 3px dashed #ff4500;
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 0 15px #ff4500 inset;
+    }
+    .feature-card:hover {
+      background: #ff45001a;
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #ff4500 inset;
+    }
+    .feature-icon {
+      font-size: 4rem;
+      color: #ff4500;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #ff4500;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 2px solid #ff4500;
+      margin-top: 3rem;
+      user-select: none;
+    }
+    /* Badge style for monkey emoji */
+    .monkey-badge {
+      font-size: 1.5rem;
+      background-color: #ff4500;
+      color: #fff;
+      padding: 0.15em 0.5em;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+      user-select: none;
+      box-shadow: 0 0 8px #ff4500;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand" href="#">Forgotten VR <span class="monkey-badge" title="Official Monkey Badge" data-bs-toggle="tooltip" data-bs-placement="bottom">🐒</span></a>
+      <button class="navbar-toggler btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>The Forgotten VR Game</h1>
+    <button class="btn btn-warning btn-lg" onclick="alert('You clicked it! Prepare for epic monkey business 🐒')">Smash This Button</button>
+  </header>
+
+  <main>
+    <section class="text-center mb-5">
+      <h2>Why Play The Forgotten?</h2>
+      <p class="lead">
+        Would you rather stare at Discord having no fun or get some monkey madness in VR?<br />
+        We don’t charge bananas! (That’s money, but less slippery.)
+      </p>
+    </section>
+
+    <section id="features" class="mb-5">
+      <h3 class="text-center mb-4">Features That Don’t Suck</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card text-center shadow">
+            <i class="fa-solid fa-brain feature-icon"></i>
+            <h5>Good Moderation <span class="badge bg-warning text-dark">12pm-11pm</span></h5>
+            <p>We make sure a mod is watching during the day.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center shadow">
+            <i class="fa-solid fa-jungle feature-icon"></i>
+            <h5>Wild Maps <span class="badge bg-danger">Spicy</span></h5>
+            <p>So far, just places your mom warned you about (and some secret monkey spots).</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card text-center shadow">
+            <i class="fa-solid fa-people-group feature-icon"></i>
+            <h5>Multiplayer Madness <span class="badge bg-success">Squad up</span></h5>
+            <p>Play with your monkey crew or troll the newbies online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="text-center mb-5">
+      <h3>Ready to Join the Monkeys?</h3>
+      <p>Click the big orange button below. No refunds if you get addicted.</p>
+      <a href="#" class="btn btn-danger btn-lg">Sign Up for Beta Testing!</a>
+    </section>
+
+    <section id="contact" class="text-center mb-5">
+      <h3>Contact Us</h3>
+      <p>Got questions or want to report a bad player? Hit us up!</p>
+      <a href="mailto:support@coconutz.site" class="btn btn-warning me-2">Email Support</a>
+      <a href="" target="_blank" class="btn btn-warning">Join Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 The Forgotten VR Game</p>
+    <p>© 2025 Coconutz Support team</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const tooltipTriggerList = [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+    tooltipTriggerList.forEach(tooltipTriggerEl => {
+      new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+</html>
